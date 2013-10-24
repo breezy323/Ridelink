@@ -1,0 +1,61 @@
+/*Custom CSS styles*/
+
+
+/*Navigation*/
+nav#main-nav.navbar-inverse{
+	background-color: #1c1c1c;
+	box-shadow: 0 0 8px rgba(0,0,0,0.4);
+}
+
+nav#main-nav .navbar-nav{
+	float: right;
+}
+
+.background-pic {
+	background: url("../img/limolarge.jpg") no-repeat fixed 0 0;
+	background-size: cover;
+	width: 100%;
+	min-height: 800px !important;
+}
+
+#ban-head{
+	margin: 215px 0 100px;
+}
+
+#ban-head #border-top{
+	border: 3px solid rgba(256,256,256,0.6);
+	width: 50%;
+	margin: 0 auto;
+	position: relative;;
+	border-radius: 10px;
+	-webkit-border-radius:10px;
+	padding: 10px;
+}
+
+.jumbotron {
+	color: #fff;
+	text-align: center;
+}
+
+.btn-start{
+	border: 2px solid rgba(256,256,256,0.6);
+	width: 50%;
+	margin: 0 auto;
+	position: relative;;
+	border-radius: 5px;
+	-webkit-border-radius:5px;
+	padding: 10px;
+	color: #fff
+}
+
+/* Foooter */
+footer {
+	background: #1c1c1c;
+	text-align: center;
+	color: #6f6f6f;
+	padding: 60px 0 40px 0;
+}
+
+footer .container{
+	max-width: none;
+}
