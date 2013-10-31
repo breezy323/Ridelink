@@ -153,7 +153,7 @@
                       </div>
                       <div class="panel-body" id="panel-info">
                         <div class="col-md-6">
-                        <h3>Enter Your Pickup Information</h3>
+                          <h3>Enter Your Pickup Information</h3>
                           <form role="form">
                             <div class="form-group">
                               <div class="form-group">
@@ -165,11 +165,11 @@
                                 <input type="time" class="form-control" id="pickupTime" placeholder="Pick up time">
                               </div>
                               <div class="form-group">
-                                <label for="pickupAddress">Pick up Date</label>
+                                <label for="pickupAddress">Pick Up Location</label>
                                 <input type="text" class="form-control" id="pickupAddress" placeholder="Address, City, State, Zip">
                               </div>
                               <div class="form-group">
-                                <label for="dropOffAirport">Pick up Date</label>
+                                <label for="dropOffAirport">Drop Off Location</label>
                                 <input type="text" class="form-control" id="dropOffAirport" placeholder="Los Angeles International Airport (LAX)">
                               </div>
                             </div>
@@ -178,30 +178,52 @@
                         <div class="col-md-6">
                           <h3>Select Your Vehicle</h3>
                           <div class="list-group">
-                            <a class="list-group-item">
-                              <div class="thumbnail pull-right">
-                              <img src="http://ridelink.1800fly1800.com/images/detailed/1/towncar.jpg">
+                            <!-- Vehicle One -->
+                            <a class="list-group-item">                              
+                              <div id="pic-area" class="pull-right">
+                                <div class="thumbnail">
+                                  <img src="http://ridelink.1800fly1800.com/images/detailed/1/towncar.jpg" class="img-responsive" style="width: 200px;">
+                                  <button type="button" class="btn btn-default" style="width:100%">Select</button>
+                                </div>
                               </div>
-                              <h3 style="color:#000">Sedan</h3>
-                              <p style="color:#000"><span class="glyphicon glyphicon-user"></span>  Max # of Passengers: 4 <br>
-                             <span class="glyphicon glyphicon-briefcase"></span>  Max # of Luggage: 3</p>
-                            </a>
-                            <a class="list-group-item">
-                              <div class="thumbnail pull-right">
-                              <img src="http://ridelink.1800fly1800.com/images/detailed/1/suv.jpg">
+                              <div id="desc-area">
+                                <h3 style="color:#000">Sedan</h3>
+                                <p style="color:#000"><span class="glyphicon glyphicon-user"></span>  Max # of Passengers: 4 <br>
+                               <span class="glyphicon glyphicon-briefcase"></span>  Max # of Luggage: 3</p>
                               </div>
-                              <h3 style="color:#000">SUV</h3>
-                              <p style="color:#000"><span class="glyphicon glyphicon-user"></span>  Max # of Passengers: 6 <br>
-                             <span class="glyphicon glyphicon-briefcase"></span>  Max # of Luggage: 4</p>
                             </a>
-                            <a class="list-group-item">
-                              <div class="thumbnail pull-right">
-                              <img src="http://ridelink.1800fly1800.com/images/detailed/1/van.jpg">
+                            <!-- End Vehicle One -->
+                            <!-- Vehicle Two -->
+                            <a class="list-group-item">                              
+                              <div id="pic-area" class="pull-right">
+                                <div class="thumbnail">
+                                  <img src="http://ridelink.1800fly1800.com/images/detailed/1/suv.jpg" class="img-responsive" style="width: 200px;">
+                                  <button type="button" class="btn btn-default" style="width:100%">Select</button>
+                                </div>
                               </div>
-                              <h3 style="color:#000">Van</h3>
-                              <p style="color:#000"><span class="glyphicon glyphicon-user"></span>  Max # of Passengers: 8 <br>
-                             <span class="glyphicon glyphicon-briefcase"></span>  Max # of Luggage: 6</p>
+                              <div id="desc-area">
+                                <h3 style="color:#000">SUV</h3>
+                                <p style="color:#000"><span class="glyphicon glyphicon-user"></span>  Max # of Passengers: 6 <br>
+                               <span class="glyphicon glyphicon-briefcase"></span>  Max # of Luggage: 6</p>
+                              </div>
                             </a>
+                            <!-- End Vehicle Two -->
+                            <!-- Vehicle Three -->
+                            <a class="list-group-item">                              
+                              <div id="pic-area" class="pull-right">
+                                <div class="thumbnail">
+                                  <img src="http://ridelink.1800fly1800.com/images/detailed/1/van.jpg" class="img-responsive" style="width: 200px;">
+                                  <button type="button" class="btn btn-default" style="width:100%">Select</button>
+                                </div>
+                              </div>
+                              <div id="desc-area">
+                                <h3 style="color:#000">Van</h3>
+                                <p style="color:#000"><span class="glyphicon glyphicon-user"></span>  Max # of Passengers: 8 <br>
+                               <span class="glyphicon glyphicon-briefcase"></span>  Max # of Luggage: 8</p>
+                              </div>
+                            </a>
+                            <!-- End Vehicle Three -->
+                            <!-- Suggested Price-->
                             <div class="list-group-item">
                               <div id="name-price">
                                 <h3>Please enter your suggested price.</h3>
@@ -210,10 +232,10 @@
                                   <input type="text" class="form-control" maxlength="3">
                                   <span class="input-group-addon">.00</span>
                                 </div>
-                               </div> 
-                              <br>            
+                               </div>
                             </div>
                           </div>
+                          <button type="submit" class="btn btn-default pull-right">Continue</button>
                         </div>
                       </div>
                     </div>
@@ -226,7 +248,91 @@
                           <h3 class="panel-title">Point To Point</h3>
                         </div>
                         <div class="panel-body">
-                          Panel content
+                          <div class="col-md-6">
+                          <h3>Enter Your Pickup Information</h3>
+                          <form role="form">
+                            <div class="form-group">
+                              <div class="form-group">
+                                <label for="pickupDate">Pick up Date</label>
+                                <input type="date" class="form-control" id="pickupDate" placeholder="Pick up date">
+                              </div>
+                              <div class="form-group">
+                                <label for="pickupTime">Pick up Time</label>
+                                <input type="time" class="form-control" id="pickupTime" placeholder="Pick up time">
+                              </div>
+                              <div class="form-group">
+                                <label for="pickupAddress">Pick up Location</label>
+                                <input type="text" class="form-control" id="pickupAddress" placeholder="Address, City, State, Zip">
+                              </div>
+                              <div class="form-group">
+                                <label for="dropOffAirport">Drop Off Location</label>
+                                <input type="text" class="form-control" id="dropOffAddress" placeholder="Address, City, State, Zip">
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="col-md-6">
+                          <h3>Select Your Vehicle</h3>
+                          <div class="list-group">
+                            <!-- Vehicle One -->
+                            <a class="list-group-item">                              
+                              <div id="pic-area" class="pull-right">
+                                <div class="thumbnail">
+                                  <img src="http://ridelink.1800fly1800.com/images/detailed/1/towncar.jpg" class="img-responsive" style="width: 200px;">
+                                  <button type="button" class="btn btn-default" style="width:100%">Select</button>
+                                </div>
+                              </div>
+                              <div id="desc-area">
+                                <h3 style="color:#000">Sedan</h3>
+                                <p style="color:#000"><span class="glyphicon glyphicon-user"></span>  Max # of Passengers: 4 <br>
+                               <span class="glyphicon glyphicon-briefcase"></span>  Max # of Luggage: 3</p>
+                              </div>
+                            </a>
+                            <!-- End Vehicle One -->
+                            <!-- Vehicle Two -->
+                            <a class="list-group-item">                              
+                              <div id="pic-area" class="pull-right">
+                                <div class="thumbnail">
+                                  <img src="http://ridelink.1800fly1800.com/images/detailed/1/suv.jpg" class="img-responsive" style="width: 200px;">
+                                  <button type="button" class="btn btn-default" style="width:100%">Select</button>
+                                </div>
+                              </div>
+                              <div id="desc-area">
+                                <h3 style="color:#000">SUV</h3>
+                                <p style="color:#000"><span class="glyphicon glyphicon-user"></span>  Max # of Passengers: 6 <br>
+                               <span class="glyphicon glyphicon-briefcase"></span>  Max # of Luggage: 6</p>
+                              </div>
+                            </a>
+                            <!-- End Vehicle Two -->
+                            <!-- Vehicle Three -->
+                            <a class="list-group-item">                              
+                              <div id="pic-area" class="pull-right">
+                                <div class="thumbnail">
+                                  <img src="http://ridelink.1800fly1800.com/images/detailed/1/van.jpg" class="img-responsive" style="width: 200px;">
+                                  <button type="button" class="btn btn-default" style="width:100%">Select</button>
+                                </div>
+                              </div>
+                              <div id="desc-area">
+                                <h3 style="color:#000">Van</h3>
+                                <p style="color:#000"><span class="glyphicon glyphicon-user"></span>  Max # of Passengers: 8 <br>
+                               <span class="glyphicon glyphicon-briefcase"></span>  Max # of Luggage: 8</p>
+                              </div>
+                            </a>
+                            <!-- End Vehicle Three -->
+                            <!-- Suggested Price-->
+                            <div class="list-group-item">
+                              <div id="name-price">
+                                <h3>Please enter your suggested price.</h3>
+                                <div class="input-group">
+                                  <span class="input-group-addon">$</span>
+                                  <input type="text" class="form-control" maxlength="3">
+                                  <span class="input-group-addon">.00</span>
+                                </div>
+                               </div>
+                            </div>
+                          </div>
+                          <button type="submit" class="btn btn-default pull-right">Continue</button>
+                        </div>
                         </div>
                       </div>
                     </div>
@@ -238,7 +344,91 @@
                         <h3 class="panel-title">Hourly Pick Up</h3>
                       </div>
                       <div class="panel-body">
-                        Panel content
+                        <div class="col-md-6">
+                          <h3>Enter Your Pickup Information</h3>
+                          <form role="form">
+                            <div class="form-group">
+                              <div class="form-group">
+                                <label for="pickupDate">Pick up Date</label>
+                                <input type="date" class="form-control" id="pickupDate" placeholder="Pick up date">
+                              </div>
+                              <div class="form-group">
+                                <label for="pickupTime">Pick up Time</label>
+                                <input type="time" class="form-control" id="pickupTime" placeholder="Pick up time">
+                              </div>
+                              <div class="form-group">
+                                <label for="pickupAddress">Pick Up Location</label>
+                                <input type="text" class="form-control" id="pickupAddress" placeholder="Address, City, State, Zip">
+                              </div>
+                              <div class="form-group">
+                                <label for="numHours">Number Of Hours</label>
+                                <input type="number" class"form-control" name="numHours" min="3" max=10>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="col-md-6">
+                          <h3>Select Your Vehicle</h3>
+                          <div class="list-group">
+                            <!-- Vehicle One -->
+                            <a class="list-group-item">                              
+                              <div id="pic-area" class="pull-right">
+                                <div class="thumbnail">
+                                  <img src="http://ridelink.1800fly1800.com/images/detailed/1/towncar.jpg" class="img-responsive" style="width: 200px;">
+                                  <button type="button" class="btn btn-default" style="width:100%">Select</button>
+                                </div>
+                              </div>
+                              <div id="desc-area">
+                                <h3 style="color:#000">Sedan</h3>
+                                <p style="color:#000"><span class="glyphicon glyphicon-user"></span>  Max # of Passengers: 4 <br>
+                               <span class="glyphicon glyphicon-briefcase"></span>  Max # of Luggage: 3</p>
+                              </div>
+                            </a>
+                            <!-- End Vehicle One -->
+                            <!-- Vehicle Two -->
+                            <a class="list-group-item">                              
+                              <div id="pic-area" class="pull-right">
+                                <div class="thumbnail">
+                                  <img src="http://ridelink.1800fly1800.com/images/detailed/1/suv.jpg" class="img-responsive" style="width: 200px;">
+                                  <button type="button" class="btn btn-default" style="width:100%">Select</button>
+                                </div>
+                              </div>
+                              <div id="desc-area">
+                                <h3 style="color:#000">SUV</h3>
+                                <p style="color:#000"><span class="glyphicon glyphicon-user"></span>  Max # of Passengers: 6 <br>
+                               <span class="glyphicon glyphicon-briefcase"></span>  Max # of Luggage: 6</p>
+                              </div>
+                            </a>
+                            <!-- End Vehicle Two -->
+                            <!-- Vehicle Three -->
+                            <a class="list-group-item">                              
+                              <div id="pic-area" class="pull-right">
+                                <div class="thumbnail">
+                                  <img src="http://ridelink.1800fly1800.com/images/detailed/1/van.jpg" class="img-responsive" style="width: 200px;">
+                                  <button type="button" class="btn btn-default" style="width:100%">Select</button>
+                                </div>
+                              </div>
+                              <div id="desc-area">
+                                <h3 style="color:#000">Van</h3>
+                                <p style="color:#000"><span class="glyphicon glyphicon-user"></span>  Max # of Passengers: 8 <br>
+                               <span class="glyphicon glyphicon-briefcase"></span>  Max # of Luggage: 8</p>
+                              </div>
+                            </a>
+                            <!-- End Vehicle Three -->
+                            <!-- Suggested Price-->
+                            <div class="list-group-item">
+                              <div id="name-price">
+                                <h3>Please enter your suggested per hour price.</h3>
+                                <div class="input-group">
+                                  <span class="input-group-addon">$</span>
+                                  <input type="text" class="form-control" maxlength="3">
+                                  <span class="input-group-addon">.00</span>
+                                </div>
+                               </div>
+                            </div>
+                          </div>
+                          <button type="submit" class="btn btn-default pull-right">Continue</button>
+                        </div>
                       </div>
                     </div>
                   </div> <!-- End Hourly Section -->                 
