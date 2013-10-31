@@ -136,125 +136,114 @@
           <h1>Order Now</h1>
           <div class="section-content">
             <div class="row">
-
+              <h3>Select Your Pick Up</h3>
               <ul class="nav nav-pills" id="booking-tab">
                 <li class="active"><a href="#to-airport" data-toggle="tab">TO AIRPORT</a></li>
-                <li><a href="#from-airport" data-toggle="tab">POINT TO POINT</a></li>
+                <li><a href="#point" data-toggle="tab">POINT TO POINT</a></li>
                 <li><a href="#hourly-ride" data-toggle="tab">HOURLY</a></li>
               </ul>
-              <div class="tab-content">
-                <div class="tab-pane fade active in" id="to-airport">
-                    <form role="form" class="form-horizontal">
-                      <div class="form-group">
-                        <div id="to-from-radio">
-                          <label class="radio-inline">
-                            <input type="radio" name="airport-radial" id="airport-options1" value="option1" checked> To Airport
-                          </label>
-                          <label class="radio-inline">
-                            <input type="radio" name="airport-radial" id="airport-options2" value="option2"> From Airport
-                          </label>
-                        </div><!-- End to-from-radio -->
-                        <div class="row">
-                          <div class="form-group col-sm-6">
-                            <label>Pick Up Date</label>
-                            <input type="date" class="form-control" id="datepicker">
-                          </div>
-                          <div class="form-group col-sm-6">
-                            <label>Pick Up Time</label>
-                            <div class="row"  id="whatTime">
-                              <div class="col-sm-4 orderTime">
-                                <select class="form-control">
-                                  <option>01</option>
-                                  <option>02</option>
-                                  <option>03</option>
-                                  <option>04</option>
-                                  <option>05</option>
-                                  <option>06</option>
-                                  <option>07</option>
-                                  <option>08</option>
-                                  <option>09</option>
-                                  <option>10</option>
-                                  <option>11</option>
-                                  <option>12</option>
-                                </select>
-                              </div> 
-                              <div class="col-sm-4 orderTime"> 
-                              <select class="form-control">
-                                <option>00</option>
-                                <option>15</option>
-                                <option>30</option>
-                                <option>45</option>
-                              </select>
+              <!-- Strt Container -->
+              <div class="container">
+                <div class="tab-content" id="order-panel">
+                  <div class="tab-pane fade active in" id="to-airport">
+                    <!-- Airport Pick up section -->
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">Airport Pick Up</h3>
+                      </div>
+                      <div class="panel-body" id="panel-info">
+                        <div class="col-md-6">
+                        <h3>Enter Your Pickup Information</h3>
+                          <form role="form">
+                            <div class="form-group">
+                              <div class="form-group">
+                                <label for="pickupDate">Pick up Date</label>
+                                <input type="date" class="form-control" id="pickupDate" placeholder="Pick up date">
                               </div>
-                              <div class="col-sm-4 orderTime">
-                              <select class="form-control">
-                                <option>A.M.</option>
-                                <option>P.M.</option>
-                              </select>
+                              <div class="form-group">
+                                <label for="pickupTime">Pick up Time</label>
+                                <input type="time" class="form-control" id="pickupTime" placeholder="Pick up time">
                               </div>
+                              <div class="form-group">
+                                <label for="pickupAddress">Pick up Date</label>
+                                <input type="text" class="form-control" id="pickupAddress" placeholder="Address, City, State, Zip">
                               </div>
-                          </div>
-                        </div><!-- Row -->
-                        <div class="row">
-                          <div id="passCount" class="col-sm-6">
-                            <label>Number of Passengers</label>
-                            <select class="form-control">
-                              <option>1</option>
-                              <option>2</option>
-                              <option>3</option>
-                              <option>4</option>
-                              <option>5</option>
-                              <option>6</option>
-                              <option>7</option>
-                              <option>8</option>
-                              <option>9</option>
-                              <option>10</option>
-                              <option>11</option>
-                              <option>12</option>
-                            </select>
-                          </div>
-                          <div id="luggCount" class="col-sm-6">
-                            <label>Number of Luggage</label>
-                            <select class="form-control">
-                              <option>1</option>
-                              <option>2</option>
-                              <option>3</option>
-                              <option>4</option>
-                              <option>5</option>
-                              <option>6</option>
-                              <option>7</option>
-                              <option>8</option>
-                              <option>9</option>
-                              <option>10</option>
-                              <option>11</option>
-                              <option>12</option>
-                            </select>
-                          </div>
+                              <div class="form-group">
+                                <label for="dropOffAirport">Pick up Date</label>
+                                <input type="text" class="form-control" id="dropOffAirport" placeholder="Los Angeles International Airport (LAX)">
+                              </div>
+                            </div>
+                          </form>
                         </div>
-                        <div class="form-group">
-                          <label>Pick Up Address</label>
-                          <input type="text" class="form-control" placeholder="Address, City, State, Zip">
-                        </div>
-                        <div class="form-group">
-                          <label>Drop Off Airport</label>
-                          <select class="form-control">
-                            <option>Los Angeles International Airport (LAX)</option>
-                            <option>Burbank Airport (BUR)</option>
-                            <option>John Wayne Aiport (SNA)</option>
-                            <option>Long Beach Airport (LGB)</option>
-                          </select>
+                        <div class="col-md-6">
+                          <h3>Select Your Vehicle</h3>
+                          <div class="list-group">
+                            <a class="list-group-item">
+                              <div class="thumbnail pull-right">
+                              <img src="http://ridelink.1800fly1800.com/images/detailed/1/towncar.jpg">
+                              </div>
+                              <h3 style="color:#000">Sedan</h3>
+                              <p style="color:#000"><span class="glyphicon glyphicon-user"></span>  Max # of Passengers: 4 <br>
+                             <span class="glyphicon glyphicon-briefcase"></span>  Max # of Luggage: 3</p>
+                            </a>
+                            <a class="list-group-item">
+                              <div class="thumbnail pull-right">
+                              <img src="http://ridelink.1800fly1800.com/images/detailed/1/suv.jpg">
+                              </div>
+                              <h3 style="color:#000">SUV</h3>
+                              <p style="color:#000"><span class="glyphicon glyphicon-user"></span>  Max # of Passengers: 6 <br>
+                             <span class="glyphicon glyphicon-briefcase"></span>  Max # of Luggage: 4</p>
+                            </a>
+                            <a class="list-group-item">
+                              <div class="thumbnail pull-right">
+                              <img src="http://ridelink.1800fly1800.com/images/detailed/1/van.jpg">
+                              </div>
+                              <h3 style="color:#000">Van</h3>
+                              <p style="color:#000"><span class="glyphicon glyphicon-user"></span>  Max # of Passengers: 8 <br>
+                             <span class="glyphicon glyphicon-briefcase"></span>  Max # of Luggage: 6</p>
+                            </a>
+                            <div class="list-group-item">
+                              <div id="name-price">
+                                <h3>Please enter your suggested price.</h3>
+                                <div class="input-group">
+                                  <span class="input-group-addon">$</span>
+                                  <input type="text" class="form-control" maxlength="3">
+                                  <span class="input-group-addon">.00</span>
+                                </div>
+                               </div> 
+                              <br>            
+                            </div>
+                          </div>
                         </div>
                       </div>
-                    </form>
-                    <div class="pull-right">
-                      <p><button type="button" id="booking-continue" class="btn btn-default">Continue</button></p>
                     </div>
-                    <div class="clearfix"></div>
+                  </div>
+                  <!-- End Airport Pick Up Section -->
+                  <!-- Start Point To Point Section -->
+                  <div class="tab-pane fade" id="point">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h3 class="panel-title">Point To Point</h3>
+                        </div>
+                        <div class="panel-body">
+                          Panel content
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Point To Point Section -->
+                    <!-- Start Hourly Section -->
+                  <div class="tab-pane fade" id="hourly-ride">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">Hourly Pick Up</h3>
+                      </div>
+                      <div class="panel-body">
+                        Panel content
+                      </div>
+                    </div>
+                  </div> <!-- End Hourly Section -->                 
                 </div>
-                <div class="tab-pane fade" id="from-airport"><p>This is tabe 2</div>
-                <div class="tab-pane fade" id="hourly-ride"><p>This is tab 3</div>
-              </div>
-            
+              </div><!-- End container -->
             </div>
           </div>
         </div><!-- End of .col-md-10 -->
