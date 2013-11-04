@@ -11,7 +11,24 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
+Route::get('/', 'HomeController@showIndex');
+
+//Admin routes
+Route::group(array('prefix' => 'admin', 'before' => 'auth.admin'), function () {
+  
+  //
+  Route::get('/', array('as' => 'admin', 'uses' => 'AdminController@index'));
+
+  //Users
+  Route::resource('users', 'AdminUsersController');
+
+  //Orders
+  Route::resource('orders', 'AdminOrdersController');
 });
+
+//Admin Login
+Route::get('/admin/login', 'AdminController@showLogin');
+Route::post('/admin/login', array('as' => 'admin.login', 'before' => 'csrf', 'uses' => 'AdminController@handleLogin'));
+
+//Admin Logout
+Route::get('/admin/logout', array('as' => 'admin.logout', 'uses' => 'AdminController@handleLogout'));
