@@ -19,7 +19,7 @@ class CreateOrdersTable extends Migration {
 			$table->integer('user_id');
 			$table->integer('product_id');
 			$table->integer('order_entity_id');
-			$table->enum('order_status', ['processing', 'accepted', 'declined', 'complete'])->default('processing');
+			$table->enum('order_status', array('processing', 'accepted', 'declined', 'complete'))->default('processing');
 
 			$table->timestamps();
 		});
