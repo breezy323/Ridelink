@@ -11,7 +11,7 @@ return array(
 	| directory. We've set a sensible default, but feel free to update it.
 	|
 	*/
-	'js_path' => 'public/js',
+	'js_path' => 'httpdocs/js',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -22,7 +22,7 @@ return array(
 	| directory. We've set a sensible default, but feel free to update it.
 	|
 	*/
-	'css_path' => 'public/css',
+	'css_path' => 'httpdocs/css',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -34,7 +34,7 @@ return array(
 	| leave this as it is.
 	|
 	*/
-	'compile_path' => 'public',
+	'compile_path' => 'httpdocs',
 
 	/*
 	|--------------------------------------------------------------------------

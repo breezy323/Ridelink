@@ -28,7 +28,7 @@ $app->redirectIfTrailingSlash();
 
 $env = $app->detectEnvironment(array(
 
-	
+	'staging' => array('dev.ridelink.net'),
   'dev' => array('localhost')
 
 ));
