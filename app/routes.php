@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', array('as' => 'home', 'uses' => 'HomeController@showIndex'));
+Route::get('/', array('as' => 'home', 'before' => 'auth.basic', 'uses' => 'HomeController@showIndex'));
 
 //Admin routes
 Route::group(array('prefix' => 'admin', 'before' => 'auth.admin'), function () {
