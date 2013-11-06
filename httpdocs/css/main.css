@@ -7470,7 +7470,18 @@ td.visible-print {
 }
 /* line 1, ../../app/assets/sass/_base.scss */
 body {
-  background-color: #fefefe;
+  background-color: #ccc;
+}
+
+/* line 5, ../../app/assets/sass/_base.scss */
+.navbar {
+  border-radius: 0;
+}
+
+/* line 9, ../../app/assets/sass/_base.scss */
+.navbar-inverse .navbar-brand {
+  color: #fefefe;
+  font-family: 'ABeeZee', sans-serif;
 }
 
 /* line 3, ../../app/assets/sass/_admin.scss */

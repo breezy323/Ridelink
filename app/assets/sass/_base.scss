@@ -1,4 +1,12 @@
 body {
-  background-color: #fefefe;
+  background-color: #ccc;
 }
 
+.navbar {
+  border-radius: 0;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #fefefe;
+  font-family: 'ABeeZee', sans-serif;
+}
