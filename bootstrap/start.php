@@ -1,4 +1,4 @@
-<?php
+  <?php
 
 /*
 |--------------------------------------------------------------------------
@@ -28,7 +28,7 @@ $app->redirectIfTrailingSlash();
 
 $env = $app->detectEnvironment(array(
 
-	'staging' => array('dev.ridelink.net'),
+	'staging' => array('ridelink.net'),
   'dev' => array('localhost')
 
 ));
