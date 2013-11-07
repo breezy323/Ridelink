@@ -9,9 +9,10 @@
     <a class='navbar-brand' href='#'>RideLink</a>
   </div>
   <div class='collapse navbar-collapse' id='navbar-collapse'>
-    <ul class='nav navbar-nav pull-right'>
-      <li @if (Route::currentRouteName() == 'home') class='active' @endif><a href='{{ route("home") }}'>Home</a></li>
-      <li><a href='#'>Order Now</a></li>
+    <ul class='nav navbar-nav pull-right' id='menu'>
+      <li data-menuanchor='index'><a href='#index'>Home</a></li>
+      <li data-menuanchor='bookit'><a href='#bookit'>Book It</a></li>
+      <li data-menuanchor='comparison'><a href='#comparison'>Comparison</a></li>
     </ul>
   </div>
 </nav>

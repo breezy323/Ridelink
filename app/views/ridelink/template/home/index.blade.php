@@ -1,4 +1,4 @@
-<div class='item-wrapper index'>
+<div class='item-wrapper index section' data-anchor='index'>
   <div class='container'>
     <div class='row'>
       <div class='col-md-9'>

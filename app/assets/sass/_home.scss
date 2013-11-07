@@ -9,8 +9,8 @@
 }
   .item-wrapper.index {
     text-align: left;
-    padding-top: 140px;
-    padding-bottom: 140px;
+    // padding-top: 140px;
+    // padding-bottom: 140px;
 
     h1 {
       color: #f1f1f1;
@@ -48,4 +48,12 @@
     .has-error .control-label {
       color: #b94a48;
     }
+  }
+
+  .item-wrapper.bookit {
+    background-color: #3276B1;
+  }
+
+  .item-wrapper.comparison {
+    background-color: #440000;
   }

@@ -43,5 +43,13 @@
       //stop it from doing its normal shit
       e.preventDefault();
     }
-  })
+  });
+
+  //setup scroller thing
+  $.fn.fullpage({
+    resize: false,
+    anchors: ['index', 'bookit'],
+    menu: '#menu'
+  });
+
 }(jQuery);

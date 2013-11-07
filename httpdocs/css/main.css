@@ -7468,6 +7468,169 @@ td.visible-print {
     display: none !important;
   }
 }
+/**
+ * fullPage 1.2.7
+ * https://github.com/alvarotrigo/fullPage.js
+ * MIT licensed
+ *
+ * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
+ */
+/* line 8, ../../app/assets/sass/_plugins.scss */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 12, ../../app/assets/sass/_plugins.scss */
+#superContainer {
+  height: 100%;
+  position: relative;
+}
+
+/* line 16, ../../app/assets/sass/_plugins.scss */
+.section {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 22, ../../app/assets/sass/_plugins.scss */
+.slide {
+  float: left;
+}
+
+/* line 25, ../../app/assets/sass/_plugins.scss */
+.slide, .slidesContainer {
+  height: 100%;
+  display: block;
+}
+
+/* line 29, ../../app/assets/sass/_plugins.scss */
+.slides {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+/* line 39, ../../app/assets/sass/_plugins.scss */
+.section.table,
+.slide.table {
+  display: table;
+  width: 100%;
+}
+
+/* line 43, ../../app/assets/sass/_plugins.scss */
+.tableCell {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 49, ../../app/assets/sass/_plugins.scss */
+.slidesContainer {
+  float: left;
+  position: relative;
+}
+
+/* line 53, ../../app/assets/sass/_plugins.scss */
+.controlArrow {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  margin-top: -38px;
+}
+
+/* line 63, ../../app/assets/sass/_plugins.scss */
+.controlArrow.prev {
+  left: 15px;
+  width: 0px;
+  border-width: 38.5px 34px 38.5px 0;
+  border-color: transparent #fff transparent transparent;
+}
+
+/* line 69, ../../app/assets/sass/_plugins.scss */
+.controlArrow.next {
+  right: 15px;
+  border-width: 38.5px 0 38.5px 34px;
+  border-color: transparent transparent transparent #fff;
+}
+
+/* line 74, ../../app/assets/sass/_plugins.scss */
+.scrollable {
+  overflow: scroll;
+}
+
+/* line 77, ../../app/assets/sass/_plugins.scss */
+.easing {
+  -webkit-transition: all 0.7s ease-out;
+  -moz-transition: all 0.7s ease-out;
+  -o-transition: all 0.7s ease-out;
+  transition: all 0.7s ease-out;
+}
+
+/* line 83, ../../app/assets/sass/_plugins.scss */
+#fullPage-nav {
+  position: fixed;
+  z-index: 100;
+  margin-top: -32px;
+  top: 50%;
+  opacity: 1;
+}
+
+/* line 90, ../../app/assets/sass/_plugins.scss */
+#fullPage-nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 94, ../../app/assets/sass/_plugins.scss */
+#fullPage-nav li {
+  display: block;
+  width: 14px;
+  height: 13px;
+  margin: 7px;
+}
+
+/* line 100, ../../app/assets/sass/_plugins.scss */
+#fullPage-nav li a {
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* line 109, ../../app/assets/sass/_plugins.scss */
+#fullPage-nav li .active span {
+  background: #333;
+}
+
+/* line 112, ../../app/assets/sass/_plugins.scss */
+#fullPage-nav span {
+  top: 2px;
+  left: 2px;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #000;
+  background: rgba(0, 0, 0, 0);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+}
+
 /* line 1, ../../app/assets/sass/_base.scss */
 html, body {
   height: 100%;
@@ -7530,8 +7693,6 @@ h1, h2, h3, h4, h5, h6,
 /* line 10, ../../app/assets/sass/_home.scss */
 .item-wrapper.index {
   text-align: left;
-  padding-top: 140px;
-  padding-bottom: 140px;
 }
 /* line 15, ../../app/assets/sass/_home.scss */
 .item-wrapper.index h1 {
@@ -7567,4 +7728,14 @@ h1, h2, h3, h4, h5, h6,
 /* line 48, ../../app/assets/sass/_home.scss */
 .item-wrapper.index .has-error .control-label {
   color: #b94a48;
+}
+
+/* line 53, ../../app/assets/sass/_home.scss */
+.item-wrapper.bookit {
+  background-color: #3276B1;
+}
+
+/* line 57, ../../app/assets/sass/_home.scss */
+.item-wrapper.comparison {
+  background-color: #440000;
 }
