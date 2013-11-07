@@ -6,7 +6,8 @@
 	"require": {
 		"laravel/framework": "4.0.*",
 		"way/generators": "dev-master",
-		"way/guard-laravel": "dev-master"
+		"way/guard-laravel": "dev-master",
+		"cartalyst/sentry": "2.0.*"
 	},
 	"autoload": {
 		"classmap": [

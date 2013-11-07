@@ -7,25 +7,30 @@ class UserTableSeeder extends Seeder {
 		// Uncomment the below to wipe the table clean before populating
 		// DB::table('user')->truncate();
 
-		User::create(array(
-        'admin' => true,
-        'email' => 'jleplomet@gmail.com',
-        'password' => Hash::make('spitfire'),
-        'first_name' => 'Jeff',
-        'last_name' => 'Leplomet',
-        'gender' => 'male',
-        'created_at' => new DateTime,
-        'updated_at' => new DateTime
+    //Create admin group
+    $adminGroup = Sentry::createGroup(array(
+      'name' => 'Administrators',
+      'permissions' => array(
+        'system' => 1
+      )
     ));
 
-    User::create(array(
-      'email' => 'brian.ceballos@gmail.com',
-      'password' => Hash::make('keepjamesout'),
-      'first_name' => 'Brian',
-      'last_name' => 'Ceballos',
-      'created_at' => new DateTime,
-      'updated_at' => new DateTime
+    //create user
+    $user = Sentry::createUser(array(
+      'email'     => 'jleplomet@gmail.com',
+      'password'  => 'x7qk',
+      'activated' => 1
+    ));
+
+    $user->addGroup( $adminGroup );
+
+    //create user
+    Sentry::createUser(array(
+      'email'     => 'brian.ceballos@gmail.com',
+      'password'  => 'keepjamesout',
+      'activated' => 1
     ));
 	}
 
 }
+

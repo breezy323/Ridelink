@@ -46,8 +46,19 @@ Route::filter('auth.basic', function()
 
 Route::filter('auth.admin', function ()
 {
-  if (Auth::guest())
-    return Redirect::guest('admin/login');
+  if (Sentry::check())
+  {
+  	$user = Sentry::getUser();
+  	$adminGroup = Sentry::findGroupByName('Administrators');
+
+  	if (!$user->inGroup($adminGroup))
+  	{
+  		return Redirect::route('admin.login');
+  	}
+  }
+  else {
+  	return Redirect::route('admin.login');
+  }
 });
 
 /*

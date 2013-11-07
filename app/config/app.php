@@ -114,7 +114,8 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Way\Generators\GeneratorsServiceProvider',
-		'Way\Console\GuardLaravelServiceProvider'
+		'Way\Console\GuardLaravelServiceProvider',
+		'Cartalyst\Sentry\SentryServiceProvider',
 
 	),
 
@@ -180,6 +181,7 @@ return array(
 		'URL'             => 'Illuminate\Support\Facades\URL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
+		'Sentry' => 'Cartalyst\Sentry\Facades\Laravel\Sentry',
 
 	),
 
