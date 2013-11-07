@@ -32,10 +32,7 @@ class CreateOrdersTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::table('orders', function(Blueprint $table)
-		{
-			//
-		});
+		Schema::drop('orders');
 	}
 
 }
