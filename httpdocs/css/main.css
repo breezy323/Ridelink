@@ -7469,19 +7469,44 @@ td.visible-print {
   }
 }
 /* line 1, ../../app/assets/sass/_base.scss */
-body {
+html, body {
+  height: 100%;
   background-color: #ccc;
 }
 
-/* line 5, ../../app/assets/sass/_base.scss */
+/* line 7, ../../app/assets/sass/_base.scss */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: 'ABeeZee', sans-serif;
+}
+
+/* line 11, ../../app/assets/sass/_base.scss */
 .navbar {
   border-radius: 0;
 }
 
-/* line 9, ../../app/assets/sass/_base.scss */
+/* line 15, ../../app/assets/sass/_base.scss */
 .navbar-inverse .navbar-brand {
   color: #fefefe;
   font-family: 'ABeeZee', sans-serif;
+}
+
+/* Inverted outline button (white on dark) */
+/* line 21, ../../app/assets/sass/_base.scss */
+.btn-outline-inverse {
+  color: #fff;
+  background-color: transparent;
+  border-color: #eeeeee;
+}
+
+/* line 28, ../../app/assets/sass/_base.scss */
+.btn-outline-inverse:hover,
+.btn-outline-inverse:focus,
+.btn-outline-inverse:active {
+  color: #222;
+  text-shadow: none;
+  background-color: #fff;
+  border-color: #fff;
 }
 
 /* line 3, ../../app/assets/sass/_admin.scss */
@@ -7491,4 +7516,55 @@ body {
 /* line 5, ../../app/assets/sass/_admin.scss */
 .ridelink-admin-login-form .page-header {
   margin-top: 5px;
+}
+
+/* line 2, ../../app/assets/sass/_home.scss */
+.ridelink-home-wrapper {
+  position: relative;
+  top: 50px;
+  width: 100%;
+  height: 100%;
+  background-color: #222;
+}
+
+/* line 10, ../../app/assets/sass/_home.scss */
+.item-wrapper.index {
+  text-align: left;
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+/* line 15, ../../app/assets/sass/_home.scss */
+.item-wrapper.index h1 {
+  color: #f1f1f1;
+  font-size: 90px;
+}
+/* line 22, ../../app/assets/sass/_home.scss */
+.item-wrapper.index p.lead {
+  color: #eeeeee;
+}
+/* line 26, ../../app/assets/sass/_home.scss */
+.item-wrapper.index .cta-wrapper {
+  padding-top: 50px;
+}
+/* line 30, ../../app/assets/sass/_home.scss */
+.item-wrapper.index .btn-outline-inverse {
+  width: auto;
+  margin: 20px 5px 20px 0;
+  padding: 18px 24px;
+  font-size: 21px;
+}
+/* line 37, ../../app/assets/sass/_home.scss */
+.item-wrapper.index .well {
+  border-color: #484848;
+  background-color: #2f2f2f;
+}
+/* line 42, ../../app/assets/sass/_home.scss */
+.item-wrapper.index .control-label {
+  text-align: left;
+  color: #eeeeee;
+  margin-bottom: 5px;
+}
+/* line 48, ../../app/assets/sass/_home.scss */
+.item-wrapper.index .has-error .control-label {
+  color: #b94a48;
 }

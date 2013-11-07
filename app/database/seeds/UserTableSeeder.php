@@ -20,7 +20,7 @@ class UserTableSeeder extends Seeder {
 
     User::create(array(
       'email' => 'brian.ceballos@gmail.com',
-      'password' => Hash::make('fatboysrule'),
+      'password' => Hash::make('keepjamesout'),
       'first_name' => 'Brian',
       'last_name' => 'Ceballos',
       'created_at' => new DateTime,

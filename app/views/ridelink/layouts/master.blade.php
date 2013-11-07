@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
-  @include('ridelink.layouts.head')
+  @include('ridelink.template.head')
 
   <body>
     @include('ridelink.template.header')
+
+    @section ('content')
+    @show
   </body>
 </html>

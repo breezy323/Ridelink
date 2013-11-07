@@ -11,7 +11,12 @@
 |
 */
 
+//Home
 Route::get('/', array('as' => 'home', 'before' => 'auth.basic', 'uses' => 'HomeController@showIndex'));
+Route::post('/', array('as' => 'home.book', 'before' => 'csrf', 'uses' => 'HomeController@bookFromIndex'));
+
+//Booking stuff
+Route::resource('booking', 'BookingController');
 
 //Admin routes
 Route::group(array('prefix' => 'admin', 'before' => 'auth.admin'), function () {

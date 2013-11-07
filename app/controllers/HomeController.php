@@ -20,4 +20,16 @@ class HomeController extends BaseController {
 		return View::make('ridelink.index');
 	}
 
+	public function bookFromIndex()
+	{
+		$data = Input::all();
+
+		//this should be validate
+
+		//store in session
+		Session::put('test', $data);
+
+		return Redirect::route('booking.create');
+	}
+
 }
