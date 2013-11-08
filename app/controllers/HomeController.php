@@ -24,7 +24,20 @@ class HomeController extends BaseController {
 	{
 		$data = Input::all();
 
-		//this should be validate
+		//validate
+		$rules = array(
+			'pickup_type' => 'required',
+			'pickup_date' => 'required',
+			'pickup_location' => 'required',
+			'drop_location' => 'required'
+		);
+
+		$validator = Validator::make($data, $rules);
+
+		if ($validator->fails()) 
+		{
+			return Response::json($validator);
+		}
 
 		//store in session
 		Session::put('test', $data);

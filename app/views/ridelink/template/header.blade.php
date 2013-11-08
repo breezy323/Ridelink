@@ -6,13 +6,17 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class='navbar-brand' href='#'>RideLink</a>
+    <a class='navbar-brand' href='#index'>RideLink</a>
   </div>
   <div class='collapse navbar-collapse' id='navbar-collapse'>
-    <ul class='nav navbar-nav pull-right' id='menu'>
+    <ul class='nav navbar-nav' id='menu'>
       <li data-menuanchor='index'><a href='#index'>Home</a></li>
-      <li data-menuanchor='bookit'><a href='#bookit'>Book It</a></li>
+      <li data-menuanchor='bookit'><a href='#bookit'>Book Now</a></li>
       <li data-menuanchor='comparison'><a href='#comparison'>Comparison</a></li>
+    </ul>
+    <ul class='nav navbar-nav pull-right'>
+      <li><a href=''>Login</a></li>
+      <li><a href=''>Register</a></li>
     </ul>
   </div>
 </nav>

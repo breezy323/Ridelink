@@ -4,8 +4,8 @@
   //the pickup)_date needs the datepicker
   $('#pickup_date').datepicker();
 
-  //only form that should be on the homepage!
-  $('form').on('submit', function (e) {
+  //widget form form first section!
+  $('form.form_widget').on('submit', function (e) {
     //this form
     var $form = $(this);
 
