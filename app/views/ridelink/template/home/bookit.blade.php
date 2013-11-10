@@ -18,8 +18,9 @@
               </div>
               <div class='container'>
               <div class='row'>
-                {{ Form::open(array('route' => 'booking.store', 'class' => 'form-horizontal')) }}
+                {{ Form::open(array('route' => 'booking.store', 'class' => 'form-horizontal form_widget')) }}
                   <div class='col-md-3 well well-sm'>
+                    <h5>Enter Your Pickup Information</h5>
                     <div class='form-group'>
                       {{ Form::label('pickup_date', 'Pick Up Date', array('class' => 'control-label col-md-12')) }}
                       <div class='col-sm-12'>

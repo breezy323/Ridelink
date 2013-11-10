@@ -7638,32 +7638,38 @@ html, body {
   font-family: 'Average Sans', sans-serif;
 }
 
-/* line 8, ../../app/assets/sass/_base.scss */
+/* line 9, ../../app/assets/sass/_base.scss */
 h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+.h1, .h2, .h3, .h4, .h5, .h6,
+.navbar-brand {
   font-family: 'ABeeZee', sans-serif;
 }
 
-/* line 12, ../../app/assets/sass/_base.scss */
+/* line 13, ../../app/assets/sass/_base.scss */
 .navbar {
   border-radius: 0;
 }
 
-/* line 16, ../../app/assets/sass/_base.scss */
+/* line 17, ../../app/assets/sass/_base.scss */
+.navbar-inverse {
+  background-color: #010101;
+}
+
+/* line 21, ../../app/assets/sass/_base.scss */
 .navbar-inverse .navbar-brand {
   color: #fefefe;
   font-family: 'ABeeZee', sans-serif;
 }
 
 /* Inverted outline button (white on dark) */
-/* line 22, ../../app/assets/sass/_base.scss */
+/* line 27, ../../app/assets/sass/_base.scss */
 .btn-outline-inverse {
   color: #fff;
   background-color: transparent;
   border-color: #eeeeee;
 }
 
-/* line 29, ../../app/assets/sass/_base.scss */
+/* line 34, ../../app/assets/sass/_base.scss */
 .btn-outline-inverse:hover,
 .btn-outline-inverse:focus,
 .btn-outline-inverse:active {
@@ -7671,6 +7677,11 @@ h1, h2, h3, h4, h5, h6,
   text-shadow: none;
   background-color: #fff;
   border-color: #fff;
+}
+
+/* line 41, ../../app/assets/sass/_base.scss */
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+  background-color: rgba(255, 255, 255, 0.12);
 }
 
 /* line 3, ../../app/assets/sass/_admin.scss */
@@ -7692,8 +7703,7 @@ h1, h2, h3, h4, h5, h6,
 
 /* line 10, ../../app/assets/sass/_home.scss */
 .item-wrapper.index {
-  text-align: left;
-  background: url(../images/index.background.jpg) no-repeat center center fixed;
+  background: url(../images/background.index.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -7706,60 +7716,61 @@ h1, h2, h3, h4, h5, h6,
 }
 /* line 28, ../../app/assets/sass/_home.scss */
 .item-wrapper.index p.lead {
-  color: #eeeeee;
+  font-weigt: normal;
+  color: #d4d4d4;
 }
-/* line 32, ../../app/assets/sass/_home.scss */
-.item-wrapper.index .cta-wrapper {
-  padding-top: 50px;
-}
-/* line 36, ../../app/assets/sass/_home.scss */
+/* line 37, ../../app/assets/sass/_home.scss */
 .item-wrapper.index .btn-outline-inverse {
   width: auto;
   margin: 20px 5px 20px 0;
-  padding: 18px 24px;
+  padding: 9px 12px;
   font-size: 21px;
 }
 
-/* line 44, ../../app/assets/sass/_home.scss */
+/* line 45, ../../app/assets/sass/_home.scss */
 .item-wrapper.bookit {
   background-color: #101215;
 }
-/* line 47, ../../app/assets/sass/_home.scss */
+/* line 48, ../../app/assets/sass/_home.scss */
 .item-wrapper.bookit .well {
   border-color: #484848;
   background-color: #2f2f2f;
 }
-/* line 52, ../../app/assets/sass/_home.scss */
+/* line 53, ../../app/assets/sass/_home.scss */
 .item-wrapper.bookit .control-label {
   text-align: left;
   color: #eeeeee;
   margin-bottom: 5px;
 }
-/* line 58, ../../app/assets/sass/_home.scss */
+/* line 59, ../../app/assets/sass/_home.scss */
 .item-wrapper.bookit .has-error .control-label {
   color: #b94a48;
 }
-/* line 62, ../../app/assets/sass/_home.scss */
+/* line 63, ../../app/assets/sass/_home.scss */
 .item-wrapper.bookit .panel-default {
   border-color: #2a2a2a;
 }
-/* line 66, ../../app/assets/sass/_home.scss */
+/* line 67, ../../app/assets/sass/_home.scss */
 .item-wrapper.bookit .panel-heading {
   color: #f1f1f1;
   background-color: #222222;
   border-color: #2a2a2a;
 }
-/* line 72, ../../app/assets/sass/_home.scss */
+/* line 73, ../../app/assets/sass/_home.scss */
 .item-wrapper.bookit .panel-body {
   color: #ececec;
   background-color: #1d1d1d;
 }
-/* line 77, ../../app/assets/sass/_home.scss */
+/* line 78, ../../app/assets/sass/_home.scss */
 .item-wrapper.bookit .pickup-type {
   margin-bottom: 10px;
 }
+/* line 83, ../../app/assets/sass/_home.scss */
+.item-wrapper.bookit .form_widget h5 {
+  font-size: 16px;
+}
 
-/* line 82, ../../app/assets/sass/_home.scss */
+/* line 89, ../../app/assets/sass/_home.scss */
 .item-wrapper.comparison {
   background-color: #440000;
 }

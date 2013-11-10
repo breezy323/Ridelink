@@ -8,11 +8,11 @@
   background-color: #222;
 }
   .item-wrapper.index {
-    text-align: left;
+    // text-align: left;
     // padding-top: 140px;
     // padding-bottom: 140px;
 
-    background: url(../images/index.background.jpg) no-repeat center center fixed; 
+    background: url(../images/background.index.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -26,17 +26,18 @@
     }
 
     p.lead {
-      color: lighten(#222, 80%);
+      font-weigt: normal;
+      color: lighten(#222, 70%);
     }
 
     .cta-wrapper {
-      padding-top: 50px;
+      //padding-top: 50px;
     }
 
     .btn-outline-inverse {
       width: auto;
       margin: 20px 5px 20px 0;
-      padding: 18px 24px;
+      padding: 9px 12px;
       font-size: 21px;
     }
   }
@@ -76,6 +77,12 @@
 
     .pickup-type {
       margin-bottom: 10px;
+    }
+
+    .form_widget {
+      h5 {
+        font-size: 16px;
+      }
     }
   }
 
